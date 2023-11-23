@@ -14,10 +14,6 @@ import java.util.Optional;
 
 class EmpleadoControllerTest {
 
-    EmpleadoResponse empleadoResponse;
-
-    Optional<Empleado> empleado;
-
     EmpleadoRepository empleadoRepositoryMock = Mockito.mock(EmpleadoRepository.class);
 
     DiferenciaEntreFechas diferenciaEntreFechas = new DiferenciaEntreFechas();
