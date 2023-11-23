@@ -23,19 +23,22 @@ class EmpleadoControllerTest {
     @BeforeEach
     void setUp() {
         Empleado mockEmpleado = new Empleado();
-        mockEmpleado.setNumeroEmpleado("123456");
-        mockEmpleado.setNombre("Juan Perez");
-        mockEmpleado.setFechaIngreso("11/01/2020");
-
+        mockEmpleado.setNumeroEmpleado("123457");
+        mockEmpleado.setNombre("Jose Ramirez");
+        mockEmpleado.setFechaIngreso("01/07/2018");
         Mockito.when(empleadoRepositoryMock.findByNumeroEmpleado("123456")).thenReturn(mockEmpleado);
-
     }
 
     @Test
     void getEmpleadoDetailsWithValidEmpleadoCode() {
         ResponseEntity<EmpleadoResponse> respuestaServicio;
         respuestaServicio = empleadoController.getEmpleadoDetalle("123456");
-        Assertions.assertEquals("Juan Perez",respuestaServicio.getBody().getNombre());
+        Assertions.assertEquals("123457",respuestaServicio.getBody().getNumeroEmpleado());
+        Assertions.assertEquals("Jose Ramirez",respuestaServicio.getBody().getNombre());
+        Assertions.assertEquals("01/07/2018",respuestaServicio.getBody().getFechaIngreso());
+        Assertions.assertEquals(5,respuestaServicio.getBody().getAñosCumplidos());
+        Assertions.assertEquals(4,respuestaServicio.getBody().getMesesCumplidos());
+        Assertions.assertEquals(22,respuestaServicio.getBody().getDiasCumplidos());
     }
 
     @Test
