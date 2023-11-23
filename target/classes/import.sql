@@ -1,0 +1,10 @@
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123456','Juan Perez','11/01/2020');
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123457','Jose Ramirez','01/07/2018');
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123458','Eduardo Gomez','24/05/2015');
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123459','Javier Rodriguez','01/01/2022');
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123460','Ruben Lopez','05/07/2013');
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123461','Miguel Vazquez','15/05/2010');
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123462','Jorge Sanchez','06/08/2021');
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123463','Maria Hernandez','15/09/2022');
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123464','Daniela Garcia','15/07/2014');
+insert into empleado (numero_empleado,nombre,fecha_ingreso) values ('123465','Alejandra Gutierrez','06/08/2020');
