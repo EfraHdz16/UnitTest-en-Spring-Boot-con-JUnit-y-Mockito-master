@@ -15,10 +15,6 @@ public class Empleado {
     @Column(name = "fecha_ingreso")
     private String fechaIngreso;
 
-    public void setEmpleadoId(Long empleadoId) {
-        this.empleadoId = empleadoId;
-    }
-
     public void setNumeroEmpleado(String numeroEmpleado) {
         this.numeroEmpleado = numeroEmpleado;
     }
